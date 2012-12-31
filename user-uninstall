@@ -1,0 +1,8 @@
+#! /bin/sh
+if [ -d "../git" ] ;then
+    sudo apt-get purge meld
+    rm $HOME/bin/gitmeld
+    git config --unset --global merge.tool
+    git config --unset --global mergetool.gitmeld.cmd
+    echo "Remove complete"
+fi

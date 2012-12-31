@@ -1,0 +1,8 @@
+#! /bin/sh
+if [ -d "../git" ] ; then
+    sudo apt-get install meld
+    ln -si -T git-meld $HOME/bin/gitmeld
+    git config --global merge.tool gitmeld
+    git config --global mergetool.gitmeld.cmd \ 'gitmeld "$BASE" "$LOCAL" "REMOTE" "MERGED"'
+    echo "Install success"
+fi

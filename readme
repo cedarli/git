@@ -1,0 +1,5 @@
+git
+git utils configuration
+Give install and remove script for ubuntu.
+Run git-meld-user-install.sh to install git mergetool used meld.
+Run git-meld-user-uninstall.sh to remove git mergetool.
